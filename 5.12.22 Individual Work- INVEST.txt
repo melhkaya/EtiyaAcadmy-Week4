@@ -1,0 +1,34 @@
+Bill Wake came up with the INVEST acronym to help us remember guidelines for writing effective user stories: 
+Independent, Negotiable, Valuable, Estimatable, Small, and Testable.
+
+Independent: As much as possible, try to make sure that stories are not interdependent as this might lead
+to prioritization and planning problems.Independent is different from logical order of developing things. 
+By independent, we mean story features. For example, let’s say we are supporting payment by credit card and 
+we want to support payment by American Express, Mastercard and Visa. Well if we had a story for MasterCard and another for Visa, 
+then the estimates will depend on which one we do first because implementing the other story will then be relatively straight forward.
+ So we’d want to clarify and have one story represent “providing a primary payment option using VISA”. 
+The other stories can then change to “provide a secondary payment option using American Express”.
+
+Negotiable: A story should be brief. It is not a detailed contract. It’s purpose is to encourage ongoing conversation and 
+scope negotiation between the customer and the developers.
+
+Valuable: A story should provide value to the customer or the user. If a customer cannot think of a value statement, 
+then perhaps we should de-prioritize the story or maybe the work is unnecessary, and we should eliminate it altogether.
+
+Another reason to have a value statement is that value represents why we are building a certain feature.
+Presenting the team with the Why (value) and not just the What (feature) might trigger different ideas of alternate features
+ that are easier or faster to develop and yet achieve the same goal and deliver the same business value.
+
+Also, because a story is delivering a piece of functionality, the customer can figure out how much this functionality costs and
+ then decide if they still need it.
+
+Finally, remember that not all value is monetary. Mitigating risk is value. So is knowledge learning or acquisition.
+
+Estimatable: Developers need to be able to estimate a story. It should be written in such a way that the developers can 
+understand it and have an idea of how to implement it. Key factors for estimation are properly sized stories as well as domain knowledge 
+and technical knowledge.
+
+Testable: Stories should be testable in order to help determine completeness. A story should have an acceptance criteria.
+ The acceptance criteria should be objective. Avoid using criteria like easy to use, fast or bug free. 
+Try to write criteria that can be measured and tested (ideally automated). For example, test that payment verification responds
+ in 1 second or less at least 95% of the time.
